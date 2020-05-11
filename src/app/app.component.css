@@ -1,0 +1,19 @@
+.div-center {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  -webkit-transform: translate(-45%, -45%);
+  transform: translate(-45%, -45%);
+  color: white;
+}
+.font-200 {
+  font-size: 185px;
+}
+.refresh-icon :hover {
+  cursor: pointer;
+  color: coral;
+}
+.refresh-icon {
+  color: white;
+  font-size: 30px;
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "ElonMuskNameGenerator": {
@@ -24,9 +24,14 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/animate.css/animate.min.css",
+              "./node_modules/font-awesome/css/font-awesome.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -117,8 +122,17 @@
               "devServerTarget": "ElonMuskNameGenerator:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://its-aman.github.io/Elon-Musk-Name-Generator/",
+            "name": "Aman Kumar",
+            "email": "kumaraman7056@gmail.com"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ElonMuskNameGenerator"
 }
